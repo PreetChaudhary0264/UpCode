@@ -22,7 +22,7 @@ app.use(cookieParser());
 // app.use(fileUpload());
 app.use(
     cors({
-        origin:"http://localhost:5173",
+        origin:"https://upcodefrontend1.vercel.app",
         credentials:true,
     })
 )
