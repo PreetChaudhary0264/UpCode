@@ -22,7 +22,7 @@ app.use(cookieParser());
 // app.use(fileUpload());
 app.use(
     cors({
-        origin:"https://upcodefrontend1.vercel.app",
+        origin:"https://upcodefrontend.netlify.app",
         credentials:true,
     })
 )
