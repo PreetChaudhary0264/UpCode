@@ -27,7 +27,7 @@ exports.resetPasswordToken = async (req, res) => {
     await user.save();
 
     // Reset link
-    const url = `http://localhost:5173/update-password/${token}`;
+    const url = `https://upcodefrontend.netlify.app/update-password/${token}`;
 
     // Send email
     await mailSender(
