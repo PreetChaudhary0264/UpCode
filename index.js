@@ -42,10 +42,12 @@ app.use("/api/v1",paymentRoutes);
 
 
 app.get("/",(req,res)=>{
-    return res.json({
-        success:true,
-        message:"Your server is running",
-    })
+    console.log("Hello from backend");
+    if (req.query.ping) {
+    return res.json({ message: "Backend awake" });
+    }
+    res.redirect("https://upcodefrontend.netlify.app");
+    
 })
 
 app.listen(PORT,()=>{
