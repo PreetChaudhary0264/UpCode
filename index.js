@@ -20,6 +20,7 @@ database.connect();
 app.use(express.json());
 app.use(cookieParser());
 // app.use(fileUpload());
+//for testing only
 app.use(
     cors({
         origin:"https://upcodefrontend.netlify.app",
