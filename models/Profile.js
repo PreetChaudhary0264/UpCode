@@ -11,6 +11,7 @@ const profileSchema = new mongoose.Schema({
             type:String,
             trim:true,
    }, 
+   //updated Schema
    contactNumber:{
             type:String,
             trim:true,
